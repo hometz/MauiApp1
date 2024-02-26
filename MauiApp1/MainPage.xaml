@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <VerticalStackLayout Spacing="15"
+                  Padding="20">
+        <Entry x:Name="EnterField"
+           FontSize="36"
+           TextColor="DarkGrey"
+           HorizontalTextAlignment="End"
+           MaxLength="16"
+           IsReadOnly="True"
+           Text="0"/>
+        <Grid ColumnSpacing="3"
+          RowSpacing="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="ResetBtn"
+          Text="AC"
+          Grid.Column="0"
+          Grid.Row="0"
+          BackgroundColor="Grey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="NegativeBtn"
+          Text="+/-"
+          Grid.Column="1"
+          Grid.Row="0"
+          BackgroundColor="Grey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="PercentBtn"
+          Text="%"
+          Grid.Column="2"
+          Grid.Row="0"
+          BackgroundColor="Grey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="DivideBtn"
+          Text="/"
+          Grid.Column="3"
+          Grid.Row="0"
+          BackgroundColor="Grey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="SevenBtn"
+          Text="7"
+          Grid.Column="0"
+          Grid.Row="1"
+          BackgroundColor="LightGrey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="EightBtn"
+          Text="8"
+          Grid.Column="1"
+          Grid.Row="1"
+          BackgroundColor="LightGrey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="NineBtn"
+          Text="9"
+          Grid.Column="2"
+          Grid.Row="1"
+          BackgroundColor="LightGrey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="MultiplyBtn"
+          Text="x"
+          Grid.Column="3"
+          Grid.Row="1"
+          BackgroundColor="Grey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="FourBtn"
+          Text="4"
+          Grid.Column="0"
+          Grid.Row="2"
+          BackgroundColor="LightGrey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="FiveBtn"
+          Text="5"
+          Grid.Column="1"
+          Grid.Row="2"
+          BackgroundColor="LightGrey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="SixBtn"
+          Text="6"
+          Grid.Column="2"
+          Grid.Row="2"
+          BackgroundColor="LightGrey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="MinusBtn"
+          Text="-"
+          Grid.Column="3"
+          Grid.Row="2"
+          BackgroundColor="Grey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="OneBtn"
+          Text="1"
+          Grid.Column="0"
+          Grid.Row="3"
+          BackgroundColor="LightGrey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="TwoBtn"
+          Text="2"
+          Grid.Column="1"
+          Grid.Row="3"
+          BackgroundColor="LightGrey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="ThreeBtn"
+          Text="3"
+          Grid.Column="2"
+          Grid.Row="3"
+          BackgroundColor="LightGrey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="AddBtn"
+          Text="+"
+          Grid.Column="3"
+          Grid.Row="3"
+          BackgroundColor="Grey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="ZeroBtn"
+          Text="0"
+          Grid.Column="0"
+          Grid.Row="4"
+          BackgroundColor="LightGrey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="ModuleBtn"
+          Text="|x|"
+          Grid.Column="1"
+          Grid.Row="4"
+          BackgroundColor="LightGrey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="CommaBtn"
+          Text=","
+          Grid.Column="2"
+          Grid.Row="4"
+          BackgroundColor="LightGrey"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+
+            <Button x:Name="EqualsBtn"
+          Text="="
+          Grid.Column="3"
+          Grid.Row="4"
+          BackgroundColor="Orange"
+          Clicked="OnButtonClicked"
+          FontSize="18"/>
+        </Grid>
+
+    </VerticalStackLayout>
+
+</ContentPage>
