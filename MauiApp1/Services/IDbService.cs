@@ -11,7 +11,7 @@ namespace MauiApp1.Services
     public interface IDbService
     {
         public IEnumerable<Museum> GetAllMuseums();
-        public IEnumerable<Exhibit> GetMuseumExhibits(int id);
+        public IEnumerable<Exhibit> GetMuseumExhibits(Museum museum);
         public void Init();
     }
 }

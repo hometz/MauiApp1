@@ -16,6 +16,5 @@ namespace MauiApp1.Entities
         public string Type { get; set; }
         public DateTime StartDate { get; set; }
         public int Duration { get; set; }
-
     }
 }

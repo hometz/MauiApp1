@@ -18,7 +18,7 @@ namespace MauiApp1.Services
             string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             string dbFile = Path.Combine(path, "myDbSQLite.db3");
 
-            Debug.WriteLine($"Is DataBase Exist: {File.Exists(path).ToString()}");
+            if (File.Exists(dbFile)) File.Delete(dbFile);
 
             db = new SQLiteConnection(dbFile, SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create);
         }
@@ -26,9 +26,9 @@ namespace MauiApp1.Services
         {
             return db.Table<Museum>().ToList();
         }
-        public IEnumerable<Exhibit> GetMuseumExhibits(int id) 
-        { 
-            return db.Table<Exhibit>().ToList();
+        public IEnumerable<Exhibit> GetMuseumExhibits(Museum museum) 
+        {
+            return db.Table<Exhibit>().Where(e => e.MuseumId == museum.Id).ToList();
         }
         public void Init()
         {

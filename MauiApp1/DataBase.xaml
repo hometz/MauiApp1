@@ -4,21 +4,14 @@
              x:Class="MauiApp1.DataBase"
              Title="DataBase">
     <VerticalStackLayout HorizontalOptions="CenterAndExpand">
-        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
-            <Entry x:Name="EntryField"
-                   Placeholder="Введите название музея..."
-                   VerticalOptions="Start"
-                   HorizontalOptions="Fill"
-                   Margin="10"
-                   WidthRequest="260"/>
-            <Button x:Name="SearchBtn"
-                    Text="Search"
-                    WidthRequest="80"
-                    HeightRequest="40"
-                    Clicked="OnSearchClicked"/>
-        </HorizontalStackLayout>
+        <Picker x:Name="Selector"
+                Title="Museums:"
+                SelectedIndexChanged="OnSelectedIndexChanged"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"
+                Margin="10"
+                WidthRequest="350"/>
         <CollectionView x:Name="CView" WidthRequest="350" HeightRequest="500">
-       
         </CollectionView>
     </VerticalStackLayout>
 </ContentPage>

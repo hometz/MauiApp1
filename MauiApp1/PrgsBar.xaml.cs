@@ -28,7 +28,7 @@ public partial class PrgsBar : ContentPage
             double completionPercent = 0;
             double res = 0;
             double A = 0, B = 1;
-            double step = 0.001;
+            double step = 0.00001;
             header.Text = "Running";
             try
             {
