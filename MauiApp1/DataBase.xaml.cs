@@ -41,7 +41,7 @@ public partial class DataBase : ContentPage
 						BorderColor = Colors.Grey,
 						Content = ExhibitName,
 						Margin = 20,
-						BackgroundColor = Colors.DarkGray
+						BackgroundColor = Colors.WhiteSmoke
 					};
 				});
 
