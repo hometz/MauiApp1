@@ -5,7 +5,7 @@
              Title="DataBase">
     <VerticalStackLayout HorizontalOptions="CenterAndExpand">
         <Picker x:Name="Selector"
-                Title="Museums:"
+                Title="Name StartDate Duration"
                 SelectedIndexChanged="OnSelectedIndexChanged"
                 VerticalOptions="Start"
                 HorizontalOptions="Fill"

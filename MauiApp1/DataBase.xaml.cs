@@ -15,7 +15,7 @@ public partial class DataBase : ContentPage
         var MuseumList = _dbService.GetAllMuseums();
 		foreach (var i in MuseumList)
 		{
-			Selector.Items.Add(i.Type);
+			Selector.Items.Add(i.Type + " " + i.StartDate + " " + i.Duration);
 		}
     }
 
@@ -25,7 +25,7 @@ public partial class DataBase : ContentPage
 
 		foreach (var i in MuseumList)
 		{
-			if (i.Type == Selector.SelectedItem as string)
+			if (i.Type + " " + i.StartDate + " " + i.Duration == Selector.SelectedItem as string)
 			{
 				var ExhibitsList = _dbService.GetMuseumExhibits(i);
 				var scrollView = new ScrollView();
@@ -36,7 +36,7 @@ public partial class DataBase : ContentPage
 					var ExhibitName = new Label();
 					ExhibitName.SetBinding(Label.TextProperty, "Name");
 
-					return new Frame
+                    return new Frame
 					{
 						BorderColor = Colors.Grey,
 						Content = ExhibitName,
