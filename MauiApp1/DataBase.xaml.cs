@@ -6,10 +6,11 @@ namespace MauiApp1;
 
 public partial class DataBase : ContentPage
 {
-	private readonly SqLiteService _dbService = new SqLiteService();
-	public DataBase()
+	private readonly IDbService _dbService;
+	public DataBase(IDbService dbService)
 	{
 		InitializeComponent();
+		_dbService = dbService;
 		_dbService.Init();
 
         var MuseumList = _dbService.GetAllMuseums();
