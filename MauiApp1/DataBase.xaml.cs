@@ -39,7 +39,7 @@ public partial class DataBase : ContentPage
 
                     return new Frame
 					{
-						BorderColor = Colors.Grey,
+						BorderColor = Colors.White,
 						Content = ExhibitName,
 						Margin = 20,
 						BackgroundColor = Colors.WhiteSmoke
