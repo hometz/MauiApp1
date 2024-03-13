@@ -11,4 +11,5 @@
     <ShellContent Title="Calculator" ContentTemplate="{ DataTemplate local:MainPage}" />
     <ShellContent Title="ProgressBar" ContentTemplate="{ DataTemplate local:PrgsBar}" />
     <ShellContent Title="DataBase" ContentTemplate="{ DataTemplate local:DataBase}" />
+    <ShellContent Title="Rate" ContentTemplate="{ DataTemplate local:RatePage}" />
 </Shell>  

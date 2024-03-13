@@ -14,7 +14,7 @@ namespace MauiApp1.Services
 {
     public class RateService : IRateService
     {
-        public static HttpClient _client;
+        private readonly HttpClient _client;
 
         public RateService(HttpClient client)
         {

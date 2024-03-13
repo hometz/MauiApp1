@@ -13,6 +13,7 @@ namespace MauiApp1
 
             builder.Services.AddTransient<IDbService, SqLiteService>();
             builder.Services.AddTransient<DataBase>();
+            builder.Services.AddTransient<RateService>();
 
             builder
                 .UseMauiApp<App>()
@@ -23,7 +24,7 @@ namespace MauiApp1
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
