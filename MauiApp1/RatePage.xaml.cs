@@ -9,5 +9,9 @@ public partial class RatePage : ContentPage
 	{
 		InitializeComponent();
 		_rateService = rateService;
+
+		var rateTask = _rateService.GetRates(DateTime.Now);
+		List<Rate> rateList = rateTask.Result.ToList();
+		Ruble.Text = $"Российский рубль - {rateList[21].Cur_OfficialRate}";
 	}
 }

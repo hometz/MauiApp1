@@ -3,4 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.RatePage"
              Title="RatePage">
+
+    <VerticalStackLayout>
+        <Frame>
+            <Label x:Name="Ruble"/>
+        </Frame>
+        <Frame>
+            <Label x:Name="Euro"/>
+        </Frame>
+        <Frame>
+            <Label x:Name="USD"/>
+        </Frame>
+        <Frame>
+            <Label x:Name="Swlnd"/>
+        </Frame>
+        <Frame>
+            <Label x:Name="China"/>
+        </Frame>
+        <Frame>
+            <Label x:Name="UK"/>
+        </Frame>
+    </VerticalStackLayout>
 </ContentPage>
