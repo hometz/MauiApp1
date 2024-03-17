@@ -19,7 +19,7 @@ public partial class DataBase : ContentPage
 			Selector.Items.Add(i.Type + " " + i.StartDate + " " + i.Duration);
 		}
     }
-
+	
 	private void OnSelectedIndexChanged(object sender, EventArgs e) 
 	{
 		var MuseumList = _dbService.GetAllMuseums();

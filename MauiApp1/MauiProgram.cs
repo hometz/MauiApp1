@@ -14,6 +14,8 @@ namespace MauiApp1
             builder.Services.AddTransient<IDbService, SqLiteService>();
             builder.Services.AddTransient<DataBase>();
             builder.Services.AddTransient<RateService>();
+            builder.Services.AddHttpClient<IRateService>(opt =>
+                opt.BaseAddress = new Uri("https://www.nbrb.by/api/exrates/rates"));
 
             builder
                 .UseMauiApp<App>()
@@ -22,6 +24,8 @@ namespace MauiApp1
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+                
 
 #if DEBUG
             builder.Logging.AddDebug();
