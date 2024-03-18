@@ -4,24 +4,31 @@
              x:Class="MauiApp1.RatePage"
              Title="RatePage">
 
-    <VerticalStackLayout>
-        <Frame>
-            <Label x:Name="Ruble"/>
-        </Frame>
-        <Frame>
-            <Label x:Name="Euro"/>
-        </Frame>
-        <Frame>
-            <Label x:Name="USD"/>
-        </Frame>
-        <Frame>
-            <Label x:Name="Swlnd"/>
-        </Frame>
-        <Frame>
-            <Label x:Name="China"/>
-        </Frame>
-        <Frame>
-            <Label x:Name="UK"/>
-        </Frame>
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Spacing="5" Margin="3">
+            <HorizontalStackLayout Spacing="5" HorizontalOptions="CenterAndExpand" WidthRequest="400">
+                <Entry x:Name="Countity" Placeholder="Введите сумму"/>
+                <Entry x:Name="Date" Placeholder="Введите дату"/>
+                <Button x:Name="Enter" Text="Enter" Clicked="OnEnterClicked"/>
+            </HorizontalStackLayout>
+            <Frame>
+                <Label x:Name="Ruble"/>
+            </Frame>
+            <Frame>
+                <Label x:Name="Euro"/>
+            </Frame>
+            <Frame>
+                <Label x:Name="USD"/>
+            </Frame>
+            <Frame>
+                <Label x:Name="Swlnd"/>
+            </Frame>
+            <Frame>
+                <Label x:Name="China"/>
+            </Frame>
+            <Frame>
+                <Label x:Name="UK"/>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
